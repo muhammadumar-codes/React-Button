@@ -1,0 +1,22 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+.count-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    width: 50%;
+    
+}
+
+.parent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}

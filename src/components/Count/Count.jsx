@@ -1,5 +1,5 @@
 import { useState } from "react";
-import Button  from "./Button/Button"
+import Button from  "../Button/Button"
 import  "./Count.css"
 
 
@@ -32,14 +32,13 @@ if (window.confirm("Would like to Reset"))
   return (
     <div className="container">
       <h1 className="count">{Count}</h1>
-      <Button className='btn-increase' onClick={Increase}>Increase</Button>
+
+        <div className="btns">
+           <Button className='btn-increase' onClick={Increase} >Increase</Button>
       <Button className='btn-increase' onClick={Decrease}>Decrease</Button>
       <Button className='btn-Reset' onClick={Reset}>Reset</Button>
+        </div>
 
-
-
-
-      {/* Child ko pass kar rahe hain */}
     </div>
   );
 }
