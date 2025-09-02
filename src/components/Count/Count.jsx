@@ -30,9 +30,8 @@ if (window.confirm("Would like to Reset"))
 }
 
   return (
-    <div className="container">
+    <div className="count-card">
       <h1 className="count">{Count}</h1>
-
         <div className="btns">
            <Button className='btn-increase' onClick={Increase} >Increase</Button>
       <Button className='btn-increase' onClick={Decrease}>Decrease</Button>
