@@ -1,6 +1,7 @@
 import "./Contact.css";
 import ContactForm from "../../components/ContactForm/ContactForm";
 import Button from  "../../components/Button/Button"
+// Registratioon  forms 
 
 export default function Contact() {
 
