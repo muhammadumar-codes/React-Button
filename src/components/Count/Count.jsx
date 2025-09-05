@@ -1,4 +1,5 @@
 import { useState } from "react";
+import Card from "../Card/Card"
 import Button from  "../Button/Button"
 import  "./Count.css"
 
@@ -8,6 +9,7 @@ export default function Count() {
 
   const Increase = () => {
     SetCount(Count + 1);
+    console.log("Rendring .")
   };
 
   const Decrease = () => {
@@ -30,7 +32,8 @@ if (window.confirm("Would like to Reset"))
 }
 
   return (
-    <div className="count-card">
+   <Card>
+     <div className="count-card">
       <h1 className="count">{Count}</h1>
         <div className="btns">
            <Button className='btn-increase' onClick={Increase} >Increase</Button>
@@ -39,5 +42,6 @@ if (window.confirm("Would like to Reset"))
         </div>
 
     </div>
+   </Card>
   );
 }

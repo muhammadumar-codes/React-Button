@@ -1,5 +1,6 @@
 import "./Contact.css";
 import ContactForm from "../../components/ContactForm/ContactForm";
+import Button from  "../../components/Button/Button"
 
 export default function Contact() {
 
@@ -11,20 +12,38 @@ const email=e.target.email.value;
 const password=e.target.password.value;
 const  users=JSON.parse(localStorage.getItem('users'))||[]
 
-console.log(`The Name is ${names}  and FatherName ${fatherName} And Email ${email} And  password ${password}`)
+// conditions
+if(!names || !fatherName || !email || !password || !users){
+  alert("Please Fill Out all Field Properly ! 🤞")
+  return;
+  
+}
+
+// showing users Exist
+const  isExist=users.find (item=>item.email===email)
+
+if (isExist){
+  alert("Users is Exist Already Please Login ! 😉")
+  return
+}
+else{
 
 const  user={
   names,fatherName,email,password
 }
 users.push(user)
 
+
 localStorage.setItem("users", JSON.stringify(users))
 
 
-alert("submited")
+alert("submited ✅")
 e.target.reset();
 
 }
+}
+
+
 
 
 
@@ -32,7 +51,9 @@ e.target.reset();
 
   return (
     <>
-      <div className="d-flex align-items-center justify-content-center min-vh-100">
+<h1 className="card w-100 text-success">Registration Page. </h1>
+
+      <div className="d-flex align-items-center justify-content-center mt-5">
         <ContactForm>
           <form action="#" id="form" className="w-100 p-5 shadow rounded bg-style " onSubmit={handleSubmit}>
             
@@ -41,7 +62,7 @@ e.target.reset();
                 User Name
               </label>
               <div className="col-sm-10">
-                <input type="text" className="form-control" id="username" required />
+                <input type="text" className="form-control" id="username"  />
               </div>
             </div>
 
@@ -50,7 +71,7 @@ e.target.reset();
                 FatherName
               </label>
               <div className="col-sm-10">
-                <input type="text" className="form-control" id="fatherName" required />
+                <input type="text" className="form-control" id="fatherName"  />
               </div>
             </div>
 
@@ -59,7 +80,7 @@ e.target.reset();
                 Email
               </label>
               <div className="col-sm-10">
-                <input type="email" className="form-control" id="email"  required/>
+                <input type="email" className="form-control" id="email"  />
               </div>
             </div>
 
@@ -68,14 +89,12 @@ e.target.reset();
                 Password
               </label>
               <div className="col-sm-10">
-                <input type="password" className="form-control" id="password" required />
+                <input type="password" className="form-control" id="password"  />
               </div>
             </div>
 
             <div className="text-center ">
-              <button type="submit" className="btn btn-primary w-50 shadow">
-                Submit
-              </button>
+             <Button className="btn-increase">Submit</Button>
             </div>
 
           </form>
