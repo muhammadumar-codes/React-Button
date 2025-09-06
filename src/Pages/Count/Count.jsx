@@ -1,6 +1,6 @@
-import "./Home.css"
+import "./Count.css"
 import Count from "../../components/Count/Count"
-export default function Home (){
+export default function CountPage (){
     return (
         <>
 <div className="count-container">

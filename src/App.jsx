@@ -1,9 +1,9 @@
 import  "./App.css"
-import  Home from "./Pages/Home/Home"
+import Count from "./Pages/Count/Count"
 import Header from './components/Header/Header'
-import Contact from  "./Pages/Contact/Contact"
-import Services from "./Pages/Services/Services"
-import About  from "./Pages/About/About"
+import Registraiton from "./Pages/Registration/Registration"
+import User from "./Pages/User-Api/User"
+import Login from "./Pages/Login/Login"
 import Footer from  "./components/Footer/Footer"
 import { useState } from "react"
 
@@ -14,10 +14,10 @@ const [Page,SetPage]=useState("home")
     return (
         <>
         <Header SetPage={SetPage}/>
-        {Page==="home" && <Home/>}
-        {Page==="about" && <About/>}
-        {Page==="services" && <Services/>}
-        {Page==="contact" && <Contact/>}
+        {Page==="count" && <Count/>}
+        {Page==="Login" && <Login/>}
+        {Page==="User" && <User/>}
+        {Page==="Registration" && <Registraiton/>}
         <Footer/>
         
         </>

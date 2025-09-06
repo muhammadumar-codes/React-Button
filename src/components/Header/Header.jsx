@@ -9,10 +9,10 @@ export default function Header ({SetPage}){
 
   <div>
     <nav>
-    <a href="#" onClick={()=>SetPage("home")}>Count</a>
-    <a href="#" onClick={()=>SetPage("services")}>Api Data</a>
-    <a href="#" onClick={()=>SetPage("contact")}>Registration Form</a>
-    <a href="#" onClick={()=>SetPage("about")}>Login </a>
+    <a href="#" onClick={()=>SetPage("count")}>Count</a>
+    <a href="#" onClick={()=>SetPage("User")}>Api Data</a>
+    <a href="#" onClick={()=>SetPage("Registration")}>Registration Form</a>
+    <a href="#" onClick={()=>SetPage("Login")}>Login </a>
     
   </nav>
   </div>

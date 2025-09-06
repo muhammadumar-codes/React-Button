@@ -1,9 +1,9 @@
-import "./Contact.css";
+import "./Registration.css";
 import ContactForm from "../../components/ContactForm/ContactForm";
 import Button from  "../../components/Button/Button"
 // Registratioon  forms 
 
-export default function Contact() {
+export default function Registraiton() {
 
 const handleSubmit =(e)=>{
 e.preventDefault();
@@ -52,11 +52,11 @@ e.target.reset();
 
   return (
     <>
-<h1 className="card w-100 text-success">Registration Page. </h1>
+<h1 className="card w-100 text-success ">Registration Page. </h1>
 
       <div className="d-flex align-items-center justify-content-center mt-5">
         <ContactForm>
-          <form action="#" id="form" className="w-100 p-5 shadow rounded bg-style " onSubmit={handleSubmit}>
+          <form action="#" id="form" className="w-100 p-5 shadow rounded bg-style mb-5" onSubmit={handleSubmit}>
             
             <div className="mb-3 row">
               <label htmlFor="username" className="col-sm-2 col-form-label">
@@ -98,7 +98,7 @@ e.target.reset();
              <Button className="btn-increase">Submit</Button>
             </div>
 
-          </form>
+          </form  >
         </ContactForm>
       </div>
     </>
