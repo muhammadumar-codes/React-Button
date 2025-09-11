@@ -14,8 +14,8 @@
   padding: 20px;
 }
 
-.card {
-  width: 350px;
+.card  {
+  width: 250px;
   background: linear-gradient(135deg, #dcb8b8cc, #a5959580, #a8a8a860);
   text-align: center;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
@@ -30,6 +30,7 @@
   transform-style: preserve-3d;
   transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
+
 
 .card:hover {
   transform: scale(0.95) translateY(-10px) rotateX(5deg);
@@ -54,6 +55,19 @@
 }
 
 
+.card-list-continer{
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+#show-meessage{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: justify;
+  margin-right: 18px;
+  
+}
 
 
 

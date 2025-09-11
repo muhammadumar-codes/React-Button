@@ -20,6 +20,8 @@ const  handleSubmit=(e)=>{
   e.preventDefault();
   console.log(Form)
 
+  SetForm({email:"" , password:""})
+
 }
   
   
