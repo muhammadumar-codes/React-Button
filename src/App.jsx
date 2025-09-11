@@ -11,10 +11,6 @@ import Registration from "./Pages/Registration/Registration";
 import User from "./Pages/User-Api/User"; // API calling page
 import Login from "./Pages/Login/Login";
 
-
-
-
-
 // if There is  Not Page Found
 
 function NotFound(){

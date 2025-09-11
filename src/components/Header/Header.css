@@ -81,7 +81,10 @@ nav a:hover {
   color: #ffd700;
   transform: scale(1.2);
 }
-
+.active{
+  border-bottom: 2px solid gold;
+  transition:cubic-bezier(0.075, 0.82, 0.165, 1) 0.4s ease-in-out;
+}
 /* Responsive */
 @media (max-width: 768px) {
   header {
