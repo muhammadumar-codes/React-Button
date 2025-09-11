@@ -82,11 +82,44 @@ nav a:hover {
   transform: scale(1.2);
 }
 
-.active{
-  border-bottom: 2px solid gold;
-  transition:cubic-bezier(0.075, 0.82, 0.165, 1) 0.4s ease-in-out;
-  padding: 5px;
+
+
+
+.nav-3 { display:flex; gap:16px; }
+.btn {
+  position: relative;
+  padding: 8px 14px;
+  color: #111;
+  text-decoration: none;
+  border-radius: 12px;
 }
+
+/* border element */
+.btn::before {
+  content: "";
+  position: absolute;
+  inset: 0; /* cover full area */
+  border-radius: inherit;
+  border: 2px solid transparent;
+  transition: border-color 220ms ease, transform 220ms ease, box-shadow 220ms ease;
+  transform: scale(0.92);
+}
+
+/* hover shows light border */
+.btn:hover::before,
+.btn:focus::before {
+  border-color: rgba(184,134,11,0.55); /* golden */
+  transform: scale(1);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+}
+
+/* active state strong */
+.btn.active::before {
+  border-color: #b8860b;
+  transform: scale(1);
+  box-shadow: 0 8px 24px rgba(184,134,11,0.12);
+}
+
 /* Responsive */
 @media (max-width: 768px) {
   header {
