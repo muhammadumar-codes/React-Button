@@ -1,25 +1,30 @@
-import  "./App.css"
-import Count from "./Pages/Count/Count"
-import Header from './components/Header/Header'
-import Registraiton from "./Pages/Registration/Registration"
-import User from "./Pages/User-Api/User"
-import Login from "./Pages/Login/Login"
-import Footer from  "./components/Footer/Footer"
-import { useState } from "react"
+import "./App.css";
+import { Routes, Route } from "react-router-dom";
 
-export default function App(){
-const [Page,SetPage]=useState("home")
+// Components
+import Header from "./components/Header/Header";
+import Footer from "./components/Footer/Footer";
 
+// Pages
+import Count from "./Pages/Count/Count";
+import Registration from "./Pages/Registration/Registration";
+import User from "./Pages/User-Api/User"; // API calling page
+import Login from "./Pages/Login/Login";
 
-    return (
-        <>
-        <Header SetPage={SetPage}/>
-        {Page==="count" && <Count/>}
-        {Page==="Login" && <Login/>}
-        {Page==="User" && <User/>}
-        {Page==="Registration" && <Registraiton/>}
-        <Footer/>
-        
-        </>
-    )
+export default function App() {
+  return (
+    <>
+      <Header />
+
+      <Routes>
+
+        <Route path="/" element={<Login />} />
+        <Route path="/count" element={<Count />} />
+        <Route path="/registration" element={<Registration />} />
+        <Route path="/user" element={<User />} />
+      </Routes>
+
+      <Footer />
+    </>
+  );
 }
