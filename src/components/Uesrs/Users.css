@@ -1,0 +1,87 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  margin-top: 30px;
+  gap: 25px;
+  padding: 20px;
+}
+
+.card  {
+  width: 250px;
+  background: linear-gradient(135deg, #dcb8b8cc, #a5959580, #a8a8a860);
+  text-align: center;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.1) inset,
+    3px 3px 10px rgba(0, 0, 0, 0.2) inset, 0 8px 32px rgba(0, 0, 0, 0.3);
+  padding: 25px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  border-radius: 15px;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  transform-style: preserve-3d;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+
+.card:hover {
+  transform: scale(0.95) translateY(-10px) rotateX(5deg);
+  box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.1) inset,
+    3px 3px 10px rgba(0, 0, 0, 0.2) inset, 0 15px 45px rgba(0, 0, 0, 0.4);
+  cursor: pointer;
+}
+
+
+.card h3 {
+  font-size: 1.8rem;
+  color: #2c3e50;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+.card p {
+  color: #34495e;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+
+.card-list-continer{
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+#show-meessage{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: justify;
+  margin-right: 18px;
+  
+}
+
+
+
+@media (max-width: 768px) {
+  .card {
+    width: 100%;
+    max-width: 400px;
+  }
+
+  .header h1 {
+    font-size: 2.2rem;
+  }
+
+  .card-container {
+    gap: 15px;
+  }
+}

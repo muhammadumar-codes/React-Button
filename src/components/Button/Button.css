@@ -1,22 +1,20 @@
-.btn-increase{
-    padding:9px;
-    cursor: pointer;
-    background-color: rgb(119, 103, 16);background: linear-gradient(135deg, #f6e27a 0%, #f0c93d 25%, #ffae00 50%, #d37e00 75%, #f6e27a 100%);
-    color: white;
-    border: none;
-    box-shadow: 0 0  3px rgba(0, 0, 0, 0.3);
-    border-radius: 5px;
- 
-    
+.btn-increase {
+  padding: 9px;
+  cursor: pointer;
+  background: linear-gradient(145deg, #4ca1af, #2c3e50);
+  color: white;
+  border: none;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+  width: 150px;
 }
-.btn-Reset{
-      padding:9px;
-    cursor: pointer;
-    color: white;
-    border: none;
-    box-shadow: 0 0  3px rgba(0, 0, 0, 0.3);
-    border-radius: 5px;
-background: linear-gradient(45deg, #ff1e56, #ff4b2b, #ff6a00);
-
-
+.btn-Reset {
+  padding: 9px;
+  cursor: pointer;
+  color: white;
+  border: none;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+  background: linear-gradient(45deg, #ff1e56, #ff4b2b, #ff6a00);
+  width: 150px;
 }

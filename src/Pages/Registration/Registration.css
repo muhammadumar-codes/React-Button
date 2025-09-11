@@ -1,0 +1,112 @@
+/* Container for the entire page */
+.contact-page {
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  padding: 40px 20px;
+  min-height: 100vh;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Form card styling */
+.contact-form {
+  background: linear-gradient(135deg, #dcb8b8cc, #a5959580, #a8a8a860);
+  padding: 40px 30px;
+  border-radius: 15px;
+box-shadow: 3px 3px 4px rgba(0,0,0,0.1) inset,
+                       3px 3px 10px rgba(0,0,0,0.2) inset,
+                       0 8px 32px rgba(0,0,0,0.3);
+  width: 100%;
+  max-width: 450px;
+  box-sizing: border-box;
+  transition: box-shadow 0.3s ease;
+}
+
+.contact-form:hover {
+  box-shadow:
+    0 12px 36px rgba(102, 126, 234, 0.5),
+    inset 0 0 15px rgba(255, 255, 255, 0.8);
+}
+
+/* Form title */
+.form-title {
+  text-align: center;
+  font-weight: 700;
+  font-size: 2rem;
+  color: #4a4a4a;
+  margin-bottom: 30px;
+  letter-spacing: 1.2px;
+}
+
+/* Form group container */
+.form-group {
+  margin-bottom: 25px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Labels */
+.form-group label {
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #333;
+  font-size: 1rem;
+}
+
+/* Inputs */
+.form-input {
+  padding: 12px 15px;
+  font-size: 1rem;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  outline: none;
+  font-family: inherit;
+  background-color: #fafafa;
+  box-shadow: inset 0 1px 3px rgba(0,0,0,0.05);
+}
+
+.form-input:focus {
+  border-color: #667eea;
+  box-shadow: 0 0 8px rgba(102, 126, 234, 0.6);
+  background-color: #fff;
+}
+
+/* Button container */
+.form-btn-container {
+  text-align: center;
+  margin-top: 10px;
+}
+
+/* Submit button */
+.btn-submit {
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  color: white;
+  border: none;
+  padding: 14px 50px;
+  font-size: 1.1rem;
+  font-weight: 700;
+  border-radius: 30px;
+  cursor: pointer;
+  box-shadow: 0 6px 15px rgba(102, 126, 234, 0.5);
+  transition: background 0.3s ease, box-shadow 0.3s ease, transform 0.2s ease;
+  font-family: inherit;
+}
+
+.btn-submit:hover,
+.btn-submit:focus {
+  background: linear-gradient(135deg, #5a6edc, #5a3f9a);
+  box-shadow: 0 8px 20px rgba(90, 110, 220, 0.7);
+  transform: translateY(-3px);
+  outline: none;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  .contact-form {
+    padding: 30px 20px;
+  }
+
+  .btn-submit {
+    width: 100%;
+    padding: 14px 0;
+  }
+}
