@@ -1,5 +1,6 @@
 import "./Header.css";
 import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 export default function Header() {
   return (
@@ -8,11 +9,12 @@ export default function Header() {
         <div className="logo">MyBrand</div>
 
         <div>
-          <nav>
-            <Link to="/">Login</Link>
-            <Link to="/registration">Registration</Link>
-            <Link to="/user">Users</Link>
-            <Link to="/count">Count</Link>
+          <nav className="nav-list">
+            
+            <NavLink to="/">Login</NavLink>
+            <NavLink to="/registration">Registration</NavLink>
+            <NavLink to="/user">Users</NavLink>
+            <NavLink to="/count">Count</NavLink>
           </nav>
         </div>
       </div>
